@@ -18,19 +18,16 @@ function UserInfo() {
           </Button>
         </DropdownTrigger>
         <DropdownMenu aria-label="Static Actions" className="bg-white border rounded-md shadow-md border-lightGray">
-          <DropdownItem
-            key="profile"
-            className="p-3 transition duration-300 rounded-sm hover:bg-gray"
-          >
-            <p className='flex items-center gap-2'>
-            <HiOutlineUser size={20} />
-            <span>Profile</span>
+          <DropdownItem key="profile" className="p-3 transition duration-300 rounded-md hover:bg-gray">
+            <p className="flex items-center gap-2">
+              <HiOutlineUser size={20} />
+              <span>Profile</span>
             </p>
           </DropdownItem>
-          <DropdownItem key="sign-out" className="p-3 transition duration-300 rounded-sm hover:bg-gray">
-            <p className='flex items-center gap-2'>
-            <TbLogout2 size={20} />
-            <span>Sign out</span>
+          <DropdownItem key="sign-out" className="p-3 transition duration-300 rounded-md hover:bg-gray">
+            <p className="flex items-center gap-2">
+              <TbLogout2 size={20} />
+              <span>Sign out</span>
             </p>
           </DropdownItem>
         </DropdownMenu>

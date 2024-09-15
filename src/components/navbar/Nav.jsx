@@ -1,8 +1,8 @@
 'use client';
-
+import { PiMapPinAreaLight } from 'react-icons/pi';
 import Image from 'next/image';
 import Link from 'next/link';
-import { HiOutlineHome, HiOutlineUsers, HiOutlineCog6Tooth } from 'react-icons/hi2';
+import { HiOutlineHome, HiOutlineUsers } from 'react-icons/hi2';
 import wasfaty from '@/assets/wasfaty.png';
 import { usePathname } from 'next/navigation';
 
@@ -22,7 +22,7 @@ function Nav() {
             href="/wasfaty"
             className={`flex items-center w-full gap-4 py-3 pl-4 ${pathname.startsWith('/wasfaty') ? 'bg-gray' : ''}`}
           >
-            <Image src={wasfaty} alt="wasfaty" className="size-5 grayscale" />
+            <Image src={wasfaty} alt="wasfaty" className="size-5 grayscale brightness-50" />
             <p>Wasfaty</p>
           </Link>
         </li>
@@ -37,11 +37,11 @@ function Nav() {
         </li>
         <li>
           <Link
-            href="/settings"
-            className={`flex items-center w-full gap-4 py-3 pl-4 ${pathname.startsWith('/settings') ? 'bg-gray' : ''}`}
+            href="/hubs"
+            className={`flex items-center w-full gap-4 py-3 pl-4 ${pathname.startsWith('/users') ? 'bg-gray' : ''}`}
           >
-            <HiOutlineCog6Tooth size={20} />
-            <span>Setting</span>
+            <PiMapPinAreaLight size={20} />
+            <span>Hubs</span>
           </Link>
         </li>
       </ul>
