@@ -1,4 +1,4 @@
 import { redirect } from 'next/navigation';
 export default function page() {
-  redirect('/wasfaty/sensors', replace);
+  redirect('/wasfaty/sensors', 'replace');
 }
