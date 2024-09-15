@@ -38,7 +38,7 @@ function Nav() {
         <li>
           <Link
             href="/hubs"
-            className={`flex items-center w-full gap-4 py-3 pl-4 ${pathname.startsWith('/users') ? 'bg-gray' : ''}`}
+            className={`flex items-center w-full gap-4 py-3 pl-4 ${pathname.startsWith('/hubs') ? 'bg-gray' : ''}`}
           >
             <PiMapPinAreaLight size={20} />
             <span>Hubs</span>
