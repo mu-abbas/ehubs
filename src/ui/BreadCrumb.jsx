@@ -8,10 +8,10 @@ export default function BreadCrumb() {
 
   return (
     <Breadcrumbs>
-      <BreadcrumbItem className="!cursor-default">Home</BreadcrumbItem>
+      <BreadcrumbItem>Home</BreadcrumbItem>
       {paths.map(path =>
         path ? (
-          <BreadcrumbItem key={path} className="!cursor-default">
+          <BreadcrumbItem key={path}>
             <span style={{textTransform: 'capitalize'}}>{path}</span>
           </BreadcrumbItem>
         ) : (

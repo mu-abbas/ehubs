@@ -12,7 +12,7 @@ function WasfatyNav() {
             pathname === '/wasfaty/sensors' ? 'border-blue text-blue bg-lightBlue/15' : 'border-transparent'
           }`}
         >
-          <Link href="/wasfaty/sensors" className="inline-block w-full p-3 text-center">
+          <Link href="/wasfaty/sensors" replace className="inline-block w-full p-3 text-center">
             Sensors
           </Link>
         </li>
@@ -21,7 +21,7 @@ function WasfatyNav() {
             pathname === '/wasfaty/search' ? 'border-blue text-blue bg-lightBlue/15' : 'border-transparent'
           }`}
         >
-          <Link href="/wasfaty/search" className="inline-block w-full p-3 text-center">
+          <Link href="/wasfaty/search" replace className="inline-block w-full p-3 text-center">
             Search
           </Link>
         </li>
@@ -30,7 +30,7 @@ function WasfatyNav() {
             pathname === '/wasfaty/upload' ? 'border-blue text-blue bg-lightBlue/15' : 'border-transparent'
           }`}
         >
-          <Link href="/wasfaty/upload" className="inline-block w-full p-3 text-center">
+          <Link href="/wasfaty/upload" replace className="inline-block w-full p-3 text-center">
             Upload
           </Link>
         </li>

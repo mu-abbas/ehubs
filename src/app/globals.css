@@ -1,3 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.orange-scrollbar {
+  --sb-track-color: #f6f6f6;
+  --sb-thumb-color: #ff9533;
+  --sb-size: 3px;
+}
+
+.orange-scrollbar::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.orange-scrollbar::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 12px;
+}
+
+.orange-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 12px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .orange-scrollbar {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+.green-scrollbar {
+  --sb-track-color: #f6f6f6;
+  --sb-thumb-color: #67cb65;
+  --sb-size: 4px;
+}
+
+.green-scrollbar::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.green-scrollbar::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 12px;
+}
+
+.green-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 12px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .green-scrollbar {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+.lightblue-scrollbar {
+  --sb-track-color: #f6f6f6;
+  --sb-thumb-color: #d9e5f9;
+  --sb-size: 4px;
+}
+
+.lightblue-scrollbar::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.lightblue-scrollbar::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 12px;
+}
+
+.lightblue-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 12px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .lightblue-scrollbar {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}

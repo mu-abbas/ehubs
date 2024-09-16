@@ -19,7 +19,7 @@ function Nav() {
         </li>
         <li>
           <Link
-            href="/wasfaty"
+            href="/wasfaty/sensors"
             className={`flex items-center w-full gap-4 py-3 pl-4 ${pathname.startsWith('/wasfaty') ? 'bg-gray' : ''}`}
           >
             <Image src={wasfaty} alt="wasfaty" className="size-5 grayscale brightness-50" />
